@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ytga.me - play with youtube videos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Le styles -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <style type="text/css">
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+            .sidebar-nav {
+                padding: 9px 0;
+            }
+        </style>
+        <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+        <link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'> 
+        
+ <meta property="og:image" content="http://ytga.me/img/ytgame_image.png" />
+    </head>
+ 
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner" id="infoArea">
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="active">
+                            <h2>About</h2>
+                            <div >This is just a silmple game<br />
+                                build with new html5 technics <br />
+                                uses <b>localstorageg</b>, what is supported <br />by all modern browsers
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <h2>Technics</h2> 
+                            <ul>
+                                <li><a  target="_blank" href="http://twitter.github.com/bootstrap/">twitter bootstrap</a></li>
+                                <li><a  target="_blank" href="http://http://jquery.com/">jQusery</a></li>
+                                <li><a target="_blank" href="http://en.wikipedia.org/wiki/HTML5">html5</a></li>
+                                <li><a target="_blank" href="https://developers.google.com/youtube/getting_started">you tube api</a></li> 
+                                <li><a target="_blank" href="http://www.google.com/webfonts">google webfonts</a>
+                            </ul>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li>
+                            <h2>Thanks To</h2>
+                            <div>
+                                to all the friends with whom I have played this game in pen & paper style, <br />
+                                whereby i got the idea to build this page.
+                                
+                            </div>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li>
+                            <h2>For Developers</h2>
+                            <div>Stay tuned i will publish the source on <a href="https://github.com" target="_blank">github</a> soon.</div>
+                        </li>
+                        
+                    </ul>
+                    <ul class="nav pull-right">
+                        <li class="">
+                            <h2>Contact</h2>
+                            <div>this was developed by:</div>
+                            <ul>
+                                <li><a href="http://markoluft.de" target="_blank">markoluft.de</a></li>
+                                <li><a href="http://twitter.com/onkeloki" target="_blank">@onkeloki</a></li>
+                                <li><a href="http://onkeloki.de" target="_blank">blog</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <br style="clear:left" />
+                </div>
+            </div>
+            <div class="navbar-inner">
+                <div class=" pull-right ">
+                    
+                    <a class="btn" href="http://www.facebook.com/sharer.php?u=http://ytga.me&t=asdasdsd" target="_blank">Share on Facebook</a>
+
+      <!--              
+                    <a type="btn" target="_blank" share_url="http://ytga.me&t=check%20out%20this%20youtube%20game" href="http://www.facebook.com/sharer.php">Teilen</a>
+
+<script src=”http://static.ak.fbcdn.net/connect.php/js/FB.Share” type=”text/javascript”> </script>
+   -->                 
+ <a href="https://twitter.com/share" class="twitter-share-button " data-url="http://ytga.me" data-text="check out this youtube music video game" data-size="large" data-count="none" data-hashtags="ytgame">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>                
+<a class=" btn btn-info "  id="infoButton"><i class="icon-info-sign icon-white"></i> About</a>
+             </div>
+                <div class="container-fluid">
+                    <a class="brand" href="#">the<b>Y</b><span class="tube">T</span>game</a>
+
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3 " id="leftCol">
+                    <div class="well sidebar-nav " id="searchmenu">
+                        <ul class="nav nav-list">
+                            <li class="nav-header">Search</li>
+                            <l style="padding-right: 5px;">
+                                <form class=" form-search">
+                                    <input type="text" class="input-medium search-query" id="search_input">
+                                    <button type="button" class="btn">&times;</button>
+                                </form>
+                                </li>
+                        </ul>
+                        <div id="resultlist">
+
+                        </div>
+                    </div>
+                </div>
+                <div  id="rightCol" class="span9">
+                    <div class="hero-unit navbar-inner hero-black" id="playerarea">
+                        <div id="playerFrame">
+                            <div style="width:420px; height:315px">a</div>
+                        </div>
+                        <div id="playerTurn">
+                            <div id="playerTurnInner">
+                                <h2 id="playerMessage"></h2>
+                                <div>Search a video and push the button</div>
+                                <button id="iwantthis" class="btn btn-large btn-primary disabled">Take This Video</button>
+                            </div>
+                        </div>
+                        <br style="clear:left" />
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span12" id="scoreboard">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <footer>
+                
+            </footer>
+
+        </div><!--/.fluid-container-->
+
+        <div class="modal hide fade" id="myModal">
+            <div class="modal-header">
+                <h3>Welcome to the unofficial Youtube Game</h3>
+            </div>
+            <div class="modal-body">
+                <div id="myCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="active item textblock">
+                           Playing this game with friends is a entertaining way, <br />
+                           to discover videos and especially music on youtube.
+                           <br />
+                           Sit together with friends and show them your favourite videos.<br />
+                           Let them rate your taste of music, and rate your friends taste.<br />
+                           <br> 
+                           Find the song of the evening, and appoint the person <br/>
+                           with the best feeling for what the others like.<br />
+                           <hr />
+                           <button class="btn" id="howtoplay">How To Play</button>
+                        </div>
+                        <div class="item">
+                            <form class="form-search">
+                                <label>Playername:</label>
+                                <input type="text" class="input-medium search-query" id="newPlayerName">
+                                <button type="button" class="btn" id="addplayerButton">+</button>
+                            </form>
+                            <ul id="playerList">
+                            </ul>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class=" item textblock">
+                            <ol id="howtoList"><li>Start adding players</li>
+                                <li>The first player searches for a video and pushes the "Take This Video"-button</li>
+                                <li>Now the other players have to rate this video from min. 1 to max. 10 points</li>
+                                <li>After all ratings are done, push the "End This Round"-button</li>
+                                <li>The player who selected the video gets the sum of the points.</li>
+                                <li>The round has ended.</li>
+                                <li>Now the next player can start searching for a video</li>
+                                <li>Play as many rounds as you want....</li>
+                                <li>In the end, the player who has most points is the winner.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer"> 
+                <a href="#" class="btn " id="continueGame">Continue Last Session</a>
+                <a href="#" class="btn btn-primary" id="gotoAddplayer">Start A New Game</a>
+                <button class="btn btn-primary " id="startGame" >Start</button>
+            </div>
+
+        </div>
+
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery/jquery.js"></script>
+        <script src="js/jquery/bootstrap-transition.js"></script>
+        <script src="js/jquery/bootstrap-alert.js"></script>
+        <script src="js/jquery/bootstrap-modal.js"></script>
+        <script src="js/jquery/bootstrap-dropdown.js"></script>
+        <script src="js/jquery/bootstrap-scrollspy.js"></script>
+        <script src="js/jquery/bootstrap-tab.js"></script>
+        <script src="js/jquery/bootstrap-tooltip.js"></script>
+        <script src="js/jquery/bootstrap-popover.js"></script>
+        <script src="js/jquery/bootstrap-button.js"></script>
+        <script src="js/jquery/bootstrap-collapse.js"></script>
+        <script src="js/jquery/bootstrap-carousel.js"></script>
+        <script src="js/jquery/bootstrap-typeahead.js"></script>
+        <script src="js/search.js"></script>
+        <script src="js/storage.js"></script>
+        <script src="js/scoreboard.js"></script>
+        <script src="js/mainapp.js"></script>
+
+
+    </body>
+</html>
