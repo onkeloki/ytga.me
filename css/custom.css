@@ -1,0 +1,204 @@
+.hero-black{
+    padding         : 5px;
+    text-align      : center;
+}
+#resultlist li{
+    list-style-type : none;
+    margin-bottom   : 0px;
+    padding         : 10px 15px ;
+    background-color: #6a6a6a
+}
+#resultlist{
+    margin          : 0px;
+}
+#resultlist > div{ 
+    padding         : 10px;
+}
+#resultlist div:nth-child(2n){
+    background-color: #262626;
+}
+#resultlist > div:hover{
+    background-color: #666;
+    cursor          : pointer;
+}
+#resultlist >div >span{
+    color           : #fff !important;
+    display         : inline !important;
+    line-height     : 12px;
+}
+#resultlist > div  >img { 
+    float           : left !important;
+    margin-right    : 10px;
+    margin-bottom   : 5px;
+}
+#searchmenu{
+    background-color: #333;
+    background-image: linear-gradient(center top , #333333, #222222);
+}
+.carousel-inner > div > div  {
+    text-align      : left !important;
+}
+.carousel-inner > div > div > span {
+    line-height     : 30px;
+}
+#playerFrame ,#playerTurn { 
+    float           : left;
+    width           : 50%;
+}
+#playerTurn{
+    color           : #fff;
+    text-align      : left;
+}
+.roundmaster img {
+    border          : 1px solid #000;
+}
+#scoretable td, #scoretable th{ 
+    vertical-align  : middle;
+    text-align      : center;
+}
+#scoretable th { 
+    line-height     : 30px
+}
+
+#playerTurnInner { 
+    padding         : 20px; 
+    height          : 320px;
+}
+#playerTurnInner div{
+    color:#c0c0c0;
+}
+#playerFrame iframe { 
+    margin          : 20px;
+}
+#playerFrame { 
+    display         : none;
+}
+#playerTurnInner h2{
+    font-family     : 'Marck Script', cursive !important;
+    font-size       : 30px;
+    margin-bottom   : 30px;
+}
+#iwantthis {
+    margin-top      : 30px;
+}
+.modal-header h3 {
+    font-size       : 26px;
+    line-height     : 30px;
+    padding-top     : 10px;
+    /*font-family     : 'Marck Script', cursive !important;*/
+    font-family: 'Righteous', cursive !important;
+
+}
+#playerTurnInner > div { 
+    font-size       : 20px;
+    font-style      : italic;
+}
+#infoArea,#startGame,#continueGame  { 
+    display         : none;
+}
+ 
+#infoArea { 
+    background      : none;
+    background-color: #F1F1F1;
+}
+#infoArea > div{ 
+    padding         : 20px;
+}
+.tube {
+    background-color: #C4302B;
+    color           : #fff;
+    font-weight     : bold; 
+    padding         : 0px 8px;
+    border-radius   : 5px;
+    margin          : 0px 5px;
+    text-align      : center;
+}
+.brand{position: relative; top:5px;}
+.brand b {font-weight: bold;color:#000; 
+          font-size: largerr;
+          text-shadow: 0px 0px 11px #fff;
+          padding-left: 5px;}
+
+.cellPlayerName,.firsthead {
+    padding         : 10px !important;
+    font-family: 'Righteous', cursive !important;
+    font-size       : 20px;
+    margin-bottom   : 30px;
+    color           : #fff;
+}
+.scoreboeadhead{
+    font-family: 'Righteous', cursive !important;
+}
+#playerMessage  b { 
+    color           : #fff;
+    font-size       : 50px;
+}
+#playerMessage   { 
+    color:#c0c0c0;
+}
+#scoretable tbody tr td select { 
+    width           : 50px;
+}
+#scoretable thead { 
+    background-color: #333;
+}
+.navbar .divider-vertical {
+    background-color: #999 !important;
+    border-color    : #999;
+}
+.navbar-inner{
+    border-bottom   : 3px solid #c0c0c0;
+}
+.removePlyer{ 
+    float           :right;
+    cursor          : pointer;
+}
+.textblock { 
+    line-height     : 22px; 
+    font-size       : 15px;
+    
+}
+#playerList li, #howtoList li {
+    line-height     : 22px; 
+    font-size       : 15px;
+    padding-left    : 10px;
+    padding-right   : 10px;
+}
+#playerList li:hover { 
+    background-color:#c0c0c0;
+}
+#playerList { 
+    list-style-type : none;
+    margin-left     :0px;
+}
+#playerList li a { 
+    line-height     : 22px;
+}
+.removePlyer i { 
+    margin-top      : 2px;
+}
+.removePlyer { 
+    display         :none;
+}
+#playerList li:hover .removePlyer{ 
+    display         :inline;
+}
+.scorecell,.scorecellvideo,.countCell { 
+    
+    font-size       : 50px;
+    /*font-family     : 'Marck Script', cursive !important;*/
+    font-family: 'Righteous', cursive !important;
+}
+
+.scorecellvideo, .countCell{ background-color:#c0c0c0 !important;color:#fff;width:10px !important}
+
+.firsthead  { 
+    color           : #fff;
+}
+.scorecellvideo{ background-color: #999 !important} 
+/*
+*{ 
+    font-family:"comic sans ms" !important
+
+}*/  
+.twitter-share-button  {position: relative; top:10px;}
